@@ -22,10 +22,10 @@ function Hero() {
 
       </section>
 
-      {/* Stats Cards Overlay - On Top */}
+      
       <div className="relative z-20 -mt-20 px-4 mb-16">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3">
-          {/* Card 1 - Teal */}  
+
           <div className="bg-linear-to-br from-cyan-400 to-cyan-600 p-6 shadow-lg hover:shadow-xl text-white text-center">
             {/* <div className="text-5xl mb-3">👥</div> */}
             <h3 className="text-2xl font-semibold mb-2">Happy Clients</h3>

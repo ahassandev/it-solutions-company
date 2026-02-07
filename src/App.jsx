@@ -7,6 +7,8 @@ import FeaturesSection from './Components/FeaturesSection'
 import Services from './Components/Services'
 import CTA from './Components/CTA'
 import Footer from './Components/Footer'
+import WorkProcess from './Components/WorkProcess'
+import Pricing from './Components/Pricing'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
       <About />
       <FeaturesSection />
       <Services />
+      <WorkProcess/>
+      <Pricing />
       <CTA />
       <Footer />
     </>
