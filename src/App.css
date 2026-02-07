@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+:root{
+	--max-w:1200px;
+	--accent:#13b2e1;
+}
+
+html,body,#root{
+	height:100%;
+}
+body{
+	margin:0;
+	font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	color:#0f172a;
+	background:#f8fafc;
+}
+
+/* Hero */
+.hero{
+	position:relative;
+	min-height:640px;
+	display:flex;
+	align-items:center;
+	color:#fff;
+	background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1650&q=80');
+	background-size:cover;
+	background-position:center;
+}
+.hero::after{
+	content:'';
+	position:absolute;
+	inset:0;
+	background:linear-gradient(180deg, rgba(6,25,44,0.65), rgba(6,25,44,0.65));
+}
+.hero-inner{
+	position:relative;
+	max-width:var(--max-w);
+	margin:0 auto;
+	width:100%;
+	padding:48px 20px;
+	text-align:center;
+}
+.hero-sub{
+	letter-spacing:2px;
+	font-size:14px;
+	color:rgba(255,255,255,0.9);
+	margin-bottom:22px;
+}
+.hero-title{
+	font-weight:800;
+	font-size:92px;
+	line-height:0.95;
+	margin:0 auto 22px auto;
+	max-width:980px;
+	color:#fff;
+	text-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+.hero-btns{ display:flex; gap:18px; justify-content:center; margin-top:22px }
+.btn-ghost{
+	background:transparent;
+	color:#fff;
+	border:2px solid rgba(255,255,255,0.55);
+	padding:12px 26px;
+	border-radius:6px;
+	font-weight:600;
+}
+.btn-primary{
+	background:var(--accent);
+	color:#04263a;
+	padding:12px 26px;
+	border-radius:6px;
+	font-weight:700;
+}
+
+/* Arrows */
+.hero-arrow{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	color:rgba(255,255,255,0.9);
+	font-size:36px;
+	width:56px;
+	height:56px;
+	border-radius:50%;
+	border:2px solid rgba(255,255,255,0.25);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	backdrop-filter: blur(4px);
+}
+.arrow-left{ left:22px }
+.arrow-right{ right:22px }
+
+@media (max-width: 900px){
+	.hero-title{ font-size:48px }
+	.hero{ min-height:520px }
+}
+
+@media (max-width: 480px){
+	.hero-title{ font-size:34px }
+	.hero-inner{ padding:28px 12px }
+}
