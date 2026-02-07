@@ -38,19 +38,20 @@ function Services() {
     <section className="py-20 md:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl font-semibold text-cyan-500 mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-gray-600">
-            Comprehensive solutions for all your web needs
-          </p>
+          <h2 className="text-4xl font-bold text-gray-800">Custom IT Solutions for your <br /> Successful Business</h2>
+          <div className="flex justify-center mt-7">
+            <div className="w-36 h-1 bg-cyan-500"></div>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
           {services.map((service, index) => (
             <div
               key={index}
-              className="border border-gray-200 p-8 rounded-lg hover:shadow-xl transition"
+              className="border border-gray-200 p-8 rounded-lg hover:shadow-xl transition bg-blue-100"
             >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-3">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function CTA() {
   return (
-    <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
+    <section className="bg-linear-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Ready to Get Started?
