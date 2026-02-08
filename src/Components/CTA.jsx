@@ -16,7 +16,7 @@ function CTA() {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log('Form submitted:', formData)
-    // Reset form
+
     setFormData({ name: '', email: '', service: '', message: '' })
   }
 
@@ -24,18 +24,18 @@ function CTA() {
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         
-        {/* Left Side - Info */}
+
         <div>
-          <p className="text-cyan-500 font-bold text-sm tracking-widest mb-3">REQUEST A QUOTE</p>
+          <p className="text-cyan-500 font-bold text-xl tracking-widest mb-3">REQUEST A QUOTE</p>
           
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-4xl font-bold text-gray-900 mb-6">
             Need A Free Quote? Please Feel Free to Contact Us
           </h2>
           
-          {/* Blue Underline */}
+
           <div className="w-20 h-1 bg-cyan-500 mb-8"></div>
           
-          {/* Features */}
+
           <div className="space-y-5 mb-8">
             <div className="flex items-center gap-4">
               <span className="text-cyan-500 text-3xl">↩</span>
@@ -47,12 +47,12 @@ function CTA() {
             </div>
           </div>
           
-          {/* Description */}
+
           <p className="text-gray-600 mb-8 leading-relaxed">
             Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.
           </p>
           
-          {/* Contact Info */}
+
           <div className="flex items-center gap-4 bg-cyan-500 text-white p-6 rounded-lg w-fit">
             <span className="text-3xl">☎</span>
             <div>
@@ -62,10 +62,10 @@ function CTA() {
           </div>
         </div>
 
-        {/* Right Side - Form */}
-        <div className="bg-cyan-500 p-8 rounded-lg">
+        
+          <div className="bg-cyan-500 p-8 rounded-lg">
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Name Input */}
+
             <input
               type="text"
               name="name"
@@ -76,7 +76,7 @@ function CTA() {
               className="w-full px-4 py-3 rounded bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300"
             />
             
-            {/* Email Input */}
+            
             <input
               type="email"
               name="email"
@@ -87,7 +87,7 @@ function CTA() {
               className="w-full px-4 py-3 rounded bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300"
             />
             
-            {/* Service Dropdown */}
+            
             <select
               name="service"
               value={formData.service}
@@ -102,7 +102,7 @@ function CTA() {
               <option value="app-development">App Development</option>
             </select>
             
-            {/* Message Textarea */}
+
             <textarea
               name="message"
               placeholder="Message"
@@ -113,7 +113,7 @@ function CTA() {
               className="w-full px-4 py-3 rounded bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 resize-none"
             ></textarea>
             
-            {/* Submit Button */}
+
             <button
               type="submit"
               className="w-full bg-gray-900 text-white py-3 px-6 rounded font-semibold hover:bg-gray-800 transition duration-300"

@@ -38,7 +38,7 @@ const Testimonial = () => {
     <section className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-cyan-500 font-bold text-sm tracking-widest mb-3">TESTIMONIAL</p>
+          <p className="text-cyan-500 font-bold text-xl tracking-widest mb-3">TESTIMONIAL</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
             What Our Clients Say About
             <br /> Our Digital Services

@@ -23,7 +23,7 @@ function Footer() {
         <div className="flex flex-col lg:flex-row gap-12">
           
           
-          <div className="bg-linear-to-b from-cyan-500 to-cyan-600 p-10 text-white lg:w-80 lg:shrink-0 h-fit">
+          <div className="bg-linear-to-b from-cyan-500 to-cyan-600 p-10 text-white w-full md:w-96 lg:w-96 lg:shrink-0 h-fit rounded-lg">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shrink-0">
                 <span className="text-cyan-600 font-bold text-xl">👤</span>
@@ -35,18 +35,18 @@ function Footer() {
               Lorem diam sit erat dolor elit et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.
             </p>
             
-            <form onSubmit={handleSubscribe} className="flex rounded overflow-hidden">
+            <form onSubmit={handleSubscribe} className="flex rounded overflow-hidden items-stretch w-full">
               <input
                 type="email"
                 placeholder="Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-5 py-4 text-gray-800 placeholder-gray-600 focus:outline-none bg-white text-sm"
+                className="flex-1 min-w-0 px-5 py-4 text-gray-800 placeholder-gray-600 focus:outline-none bg-white text-sm"
                 required
               />
               <button
                 type="submit"
-                className="bg-slate-900 px-8 py-4 text-white font-bold hover:bg-slate-800 transition whitespace-nowrap text-sm"
+                className="bg-slate-900 px-6 py-4 text-white font-bold hover:bg-slate-800 transition text-sm flex items-center justify-center cursor-pointer"
               >
                 Sign Up
               </button>

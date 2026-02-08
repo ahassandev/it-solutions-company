@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaTwitter, FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa'  
 
 const Team = () => {
     const teamMembers = [
@@ -47,16 +48,16 @@ const Team = () => {
                                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
                                     <div className="flex gap-3">
                                         <a href="#" className="w-12 h-12 bg-cyan-800 flex items-center justify-center text-white t  ext-xl hover:bg-cyan-900 transition rounded">
-                                            𝕏
+                                            <FaTwitter />
                                         </a>
                                         <a href="#" className="w-12 h-12 bg-cyan-500 flex items-center justify-center text-white text-xl hover:bg-cyan-600 transition rounded">
-                                            f
+                                            <FaFacebookF />
                                         </a>
                                         <a href="#" className="w-12 h-12 bg-cyan-500 flex items-center justify-center text-white text-xl hover:bg-cyan-600 transition rounded">
-                                            📷
+                                            <FaInstagram />
                                         </a>
                                         <a href="#" className="w-12 h-12 bg-cyan-500 flex items-center justify-center text-white text-xl hover:bg-cyan-600 transition rounded">
-                                            in
+                                            <FaLinkedinIn />
                                         </a>
                                     </div>
                                 </div>
