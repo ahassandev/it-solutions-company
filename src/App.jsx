@@ -9,6 +9,9 @@ import CTA from './Components/CTA'
 import Footer from './Components/Footer'
 import WorkProcess from './Components/WorkProcess'
 import Pricing from './Components/Pricing'
+import Testimonial from './Components/Testimonial'
+import Team from './Components/Team'
+import TechSlider from './Components/TechSlider'
 
 function App() {
 
@@ -17,11 +20,14 @@ function App() {
       <NavBar />
       <Hero />
       <About />
+      <TechSlider />
       <FeaturesSection />
       <Services />
       <WorkProcess/>
       <Pricing />
+      <Testimonial />
       <CTA />
+      <Team />
       <Footer />
     </>
   )
