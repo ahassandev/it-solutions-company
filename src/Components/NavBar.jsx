@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FiPhone, FiMail, FiMapPin, FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiYoutube } from 'react-icons/fi'
 
 function NavBar() {
@@ -30,7 +31,7 @@ function NavBar() {
 
             <div className="hidden md:flex items-center gap-2">
               <FiMapPin className="text-white" />
-              <span>Kot Khadim Ali Shah Sahiwal</span>
+              <span>Adda Athwan Meel, Pakpattan Road, Sahiwal</span>
             </div>
           </div>
           <div className="flex gap-3">
@@ -61,9 +62,9 @@ function NavBar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
           
-            <a href="/" className="text-white font-bold text-2xl tracking-tight hover:text-cyan-400 transition">
+            <Link to="/" className="text-white font-bold text-2xl tracking-tight hover:text-cyan-400 transition">
               Startup
-            </a>
+            </Link>
 
             
             <button
@@ -78,9 +79,9 @@ function NavBar() {
 
             
             <ul className={`hidden lg:flex gap-8 items-center text-white font-semibold`}>
-              <li><a href="#" className="hover:text-cyan-400 transition">Home</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition">About</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition">Service</a></li>
+              <li><Link to="/" className="hover:text-cyan-400 transition">Home</Link></li>
+              <li><Link to="/about" className="hover:text-cyan-400 transition">About</Link></li>
+              <li><Link to="/services" className="hover:text-cyan-400 transition">Service</Link></li>
               <li><a href="#" className="hover:text-cyan-400 transition">Pages</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition">Elements</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition">Contact</a></li>
@@ -99,9 +100,9 @@ function NavBar() {
           {open && (
             <div className="lg:hidden bg-slate-800 px-4 py-4 border-t border-blue-700">
               <ul className="flex flex-col gap-3">
-                <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Home</a></li>
-                <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">About</a></li>
-                <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Service</a></li>
+                <li><Link to="/" className="block text-white hover:text-cyan-400 transition py-2">Home</Link></li>
+                <li><Link to="/about" className="block text-white hover:text-cyan-400 transition py-2">About</Link></li>
+                <li><Link to="/services" className="block text-white hover:text-cyan-400 transition py-2">Service</Link></li>
                 <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Pages</a></li>
                 <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Elements</a></li>
                 <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Contact</a></li>

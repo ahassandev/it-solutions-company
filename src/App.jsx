@@ -1,8 +1,11 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import NavBar from './Components/NavBar'
 import Hero from './Components/Hero'
 import About from './Components/About'
+import AboutStandalone from './Components/AboutStandalone'
+import ServicesStandalone from './Components/ServicesStandalone'
 import FeaturesSection from './Components/FeaturesSection'
 import Services from './Components/Services'
 import CTA from './Components/CTA'
@@ -13,8 +16,7 @@ import Testimonial from './Components/Testimonial'
 import Team from './Components/Team'
 import TechSlider from './Components/TechSlider'
 
-function App() {
-
+function HomePage() {
   return (
     <>
       <NavBar />
@@ -30,6 +32,18 @@ function App() {
       <Team />
       <Footer />
     </>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutStandalone />} />
+        <Route path="/services" element={<ServicesStandalone />} />
+      </Routes>
+    </Router>
   )
 }
 
