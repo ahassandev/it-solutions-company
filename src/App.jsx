@@ -7,6 +7,7 @@ import About from './Components/About'
 import AboutStandalone from './Components/AboutStandalone'
 import ServicesStandalone from './Components/ServicesStandalone'
 import PagesStandalone from './Components/PagesStandalone'
+import ContactStandalone from './Components/ContactStandalone'
 import FeaturesSection from './Components/FeaturesSection'
 import Services from './Components/Services'
 import CTA from './Components/CTA'
@@ -44,6 +45,7 @@ function App() {
         <Route path="/about" element={<AboutStandalone />} />
         <Route path="/services" element={<ServicesStandalone />} />
         <Route path="/pages" element={<PagesStandalone />} />
+        <Route path="/contact" element={<ContactStandalone />} />
       </Routes>
     </Router>
   )

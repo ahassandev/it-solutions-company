@@ -83,8 +83,7 @@ function NavBar() {
               <li><Link to="/about" className="hover:text-cyan-400 transition">About</Link></li>
               <li><Link to="/services" className="hover:text-cyan-400 transition">Service</Link></li>
               <li><Link to="/pages" className="hover:text-cyan-400 transition">Pages</Link></li>
-              <li><a href="#" className="hover:text-cyan-400 transition">Elements</a></li>
-              <li><a href="#" className="hover:text-cyan-400 transition">Contact</a></li>
+              <li><Link to="/contact" className="hover:text-cyan-400 transition">Contact</Link></li>
             </ul>
 
             
@@ -104,8 +103,7 @@ function NavBar() {
                 <li><Link to="/about" className="block text-white hover:text-cyan-400 transition py-2">About</Link></li>
                 <li><Link to="/services" className="block text-white hover:text-cyan-400 transition py-2">Service</Link></li>
                 <li><Link to="/pages" className="block text-white hover:text-cyan-400 transition py-2">Pages</Link></li>
-                <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Elements</a></li>
-                <li><a href="#" className="block text-white hover:text-cyan-400 transition py-2">Contact</a></li>
+                <li><Link to="/contact" className="block text-white hover:text-cyan-400 transition py-2">Contact</Link></li>
                 <li><a href="#" className="block bg-cyan-500 text-slate-900 px-4 py-2 rounded font-bold mt-2 text-center hover:bg-cyan-600 transition">Purchase Now</a></li>
               </ul>
             </div>
