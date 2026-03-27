@@ -6,6 +6,7 @@ import Hero from './Components/Hero'
 import About from './Components/About'
 import AboutStandalone from './Components/AboutStandalone'
 import ServicesStandalone from './Components/ServicesStandalone'
+import PagesStandalone from './Components/PagesStandalone'
 import FeaturesSection from './Components/FeaturesSection'
 import Services from './Components/Services'
 import CTA from './Components/CTA'
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutStandalone />} />
         <Route path="/services" element={<ServicesStandalone />} />
+        <Route path="/pages" element={<PagesStandalone />} />
       </Routes>
     </Router>
   )
